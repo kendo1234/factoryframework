@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PageObject
 {
-    protected WebDriver driver;
+    WebDriver driver;
 
     public PageObject(WebDriver driver)
     {

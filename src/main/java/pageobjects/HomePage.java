@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage extends PageObject {
 
-    private static final By FTS_FIELD = By.id("");
+    private static final By HOME_PAGE_TEXT = By.cssSelector(".heading");
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -13,6 +13,6 @@ public class HomePage extends PageObject {
     }
 
     public void initialPageLoad() {
-        driver.findElement(FTS_FIELD).click();
+        driver.findElement(HOME_PAGE_TEXT);
     }
 }
