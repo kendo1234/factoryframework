@@ -5,13 +5,11 @@ import org.testng.annotations.BeforeMethod;
 
 public class InitialSetup {
     WebDriver driver;
-    protected String baseUrl;
-    protected String appVersion;
+    String baseUrl;
 
     @BeforeMethod
     //build driver from factory and set up base variables
     public void SetUp() {
-        //  driver = new DriverFactory().create();
         WebDriverManager.firefoxdriver().setup();
         baseUrl = "https://the-internet.herokuapp.com/";
     }
